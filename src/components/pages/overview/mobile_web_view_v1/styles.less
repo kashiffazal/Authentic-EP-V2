@@ -1,0 +1,185 @@
+.mobile-webview-dashboard-container {
+  .hero-section {
+    background-image: url("./hero-img.jpg");
+    background-position: center center;
+    background-size: cover;
+    margin: -10px;
+    margin-bottom: 10px;
+    .custom-loader {
+      display: block;
+      text-align: center;
+      padding: 12px 10px;
+    }
+    .hero-bg-color {
+      background: #000000b5;
+      .profile-section {
+        text-align: center;
+        padding: 75px 15px 55px 15px;
+        .profile-img {
+          border: 2px solid #fff;
+          padding: 3px;
+          margin-bottom: 15px;
+          img {
+            border-radius: 100px;
+          }
+        }
+        h2,
+        p {
+          color: #fff;
+          margin: 0px;
+          line-height: 22px;
+        }
+      }
+      .info-section {
+        background: #00000087;
+        color: #fff;
+        font-size: 12px;
+        padding: 7px 10px;
+        table tr td {
+          // border-right: 1px solid #fff;
+          span {
+            display: block;
+            position: relative;
+            b {
+              font-size: 14px;
+            }
+            &:after {
+              content: "";
+              border-right: 1px solid white;
+              right: -2px;
+              position: absolute;
+              height: 23px;
+              top: 10px;
+            }
+          }
+          &:last-child span:after {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .form-section {
+    .heading {
+      font-size: 13px;
+      margin: 10px 0px;
+      &:after {
+        border-top: 1px solid #a6a6a6;
+      }
+      &:before {
+        border-top: 1px solid #a6a6a6;
+      }
+    }
+    .form-btn,
+    .detail-box {
+      background: #fff;
+      font-size: 11px;
+      border-radius: 5px;
+      box-shadow: 0px 4px 10px #00000038;
+      padding: 13px 5px;
+      width: 100%;
+      .anticon,
+      .las {
+        color: @primary-color;
+        font-size: 22px;
+        margin-bottom: 5px;
+      }
+      .custom-loader {
+        padding: 11px 10px 12px 10px;
+        .anticon-spin {
+          margin: unset;
+          font-size: 14px;
+        }
+        .tip {
+          padding-left: 5px;
+          padding-bottom: 0px;
+          // position: relative;
+          // top: -4px;
+        }
+      }
+    }
+    .detail-box {
+      position: relative;
+      .las {
+        color: @primary-color;
+        font-size: 40px;
+        display: block;
+        margin-top: 2px;
+      }
+      b {
+        font-size: 12px;
+        margin-top: 5px;
+        display: block;
+      }
+      p {
+        color: #8e8e8e;
+        margin: 0px;
+        margin-bottom: 10px;
+      }
+      hr {
+        position: absolute;
+        left: 0;
+        right: 0;
+        border-color: #cac9ce;
+      }
+      .top-bar {
+        background: #f9f9fb;
+        /* border: 1px solid red; */
+        margin: -5px;
+        margin-top: -13px;
+        margin-bottom: 5px;
+        border-radius: 5px 5px 0px 0px;
+        padding: 8px 8px 5px 8px;
+        // text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+          font-size: 18px;
+          display: inline;
+          position: relative;
+          top: 3px;
+        }
+        button {
+          border: 1px solid @primary-color;
+          color: @primary-color;
+          padding: 1px 8px;
+          border-radius: 5px;
+          font-size: 10px;
+        }
+      }
+      .count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -13px -5px;
+        margin-top: 5px;
+        background: #f9f9fb;
+
+        border-radius: 0px 0px 5px 5px;
+        padding: 8px 0px 5px 0px;
+        div {
+          position: relative;
+          text-align: center;
+          width: 50%;
+          p {
+            color: #626262;
+            margin-bottom: -4px;
+            font-weight: 500;
+          }
+          b {
+            font-size: 14px;
+          }
+          &:first-child:after {
+            content: "";
+            border-right: 1px solid #cac9ce;
+            right: -2px;
+            position: absolute;
+            height: 23px;
+            top: 7px;
+          }
+        }
+      }
+    }
+  }
+} //End mobile-webview-dashboard-container

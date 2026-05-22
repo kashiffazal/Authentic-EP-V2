@@ -1,0 +1,28 @@
+.track{
+  display: inline-block;
+  height: 5px;
+  width: 100%;
+  margin: 0%;
+  // transition: 320ms all;
+  .sc-bdvvtL,
+  button{
+    transition: 320ms all;
+  }
+}
+.tick:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  height: 5px;
+  width: 2px;
+  transform: translate(-50%, 0.7rem);
+}
+.tickLabel{
+  position: absolute;
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.5);
+  top: 100%;
+  transform: translate(-50%, 1.2rem);
+  white-space: nowrap;
+}

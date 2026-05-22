@@ -1,0 +1,102 @@
+@import "../../css/less-variables.less";
+.mobile-drawer-container {
+  // position: relative;
+  .trigger-mobile {
+    display: none;
+  }
+  @media (max-width: 576px) {
+    .trigger-mobile {
+      display: inline-block;
+      color: #6e6a6a;
+      padding: 5px;
+      margin-left: 10px;
+      border: @menu-and-sidebar-border;
+      position: fixed;
+      z-index: 10;
+      top: 10px;
+    }
+  } //End 576
+} //End mobile-drawer-container
+.mobileNavDrawerMenu {
+  z-index: 500;
+  .ant-drawer-body {
+    padding: 0px;
+  }
+  .ant-menu-item,
+  .ant-menu-submenu div {
+    border-bottom: 1px solid #dbdbdb;
+    margin: 0px !important;
+  }
+  .ant-menu-item .las,
+  .ant-menu-submenu .ant-menu-submenu-title .las {
+    font-size: 20px;
+    top: 2px;
+    padding-right: 6px;
+    position: relative;
+  }
+  .ant-menu-submenu .ant-menu-submenu-title .las {
+    padding-right: 10px;
+  }
+  .ant-menu-submenu-arrow {
+    display: flex;
+    align-items: center;
+  }
+  .ant-menu-submenu > .ant-menu-sub > .ant-menu-item,
+// .ant-menu-submenu > .ant-menu-submenu > .ant-menu-submenu-title,
+.ant-menu-sub.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+    // border: 1px solid red;
+    padding-left: 35px !important;
+  }
+  .ant-menu-sub.ant-menu-inline
+    > .ant-menu-submenu
+    > .ant-menu-submenu-title
+    + .ant-menu
+    .ant-menu-item {
+    // border:1px solid green;
+    padding-left: 50px !important;
+  }
+
+  // .ant-menu-submenu .ant-menu-sub .ant-menu-item .ant-menu-sub .ant-menu-item,
+  // .ant-menu-submenu .ant-menu-sub .ant-menu-submenu .ant-menu-submenu-title {
+  //   border: 1px solid green;
+  //   padding-left: 40px !important;
+  // }
+} //End mobileNavDrawerMenu
+
+.mobile-web-view-container {
+  @media (max-width: 576px) {
+    .mobile-drawer-container {
+      height: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      position: sticky;
+      z-index: 5;
+      top:0px;
+
+      .trigger-mobile,
+      .trigger-mobile-right {
+        border: unset;
+        position: relative;
+        color: #fff;
+        top: 22px;
+        border-radius: 3px;
+        padding: 4px;
+        margin-left: 17px;
+        margin-right: 17px;
+        font-size: 20px;
+        z-index:1;
+        // margin-top: 45px;
+      }
+    }
+    .mobile-ios .mobile-drawer-container .trigger-mobile,
+    .mobile-ios .mobile-drawer-container .trigger-mobile-right{
+      margin-top: 95px;
+    }
+    .mobile-android .mobile-drawer-container .trigger-mobile,
+    .mobile-android .mobile-drawer-container .trigger-mobile-right{
+      margin-top: 0px;
+    }
+  } //End 576
+} //End mobile-web-view-container

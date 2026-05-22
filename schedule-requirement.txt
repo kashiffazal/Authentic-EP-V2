@@ -1,0 +1,14 @@
+Add Shift
+All Shift view on date - Done
+Next and Previous Fornight - Done
+Refesh - Done
+View by Employee or Area
+ - Employee View - Default
+  - Day
+  - Week
+  - 2 Week
+  - 4 Week
+  - Month
+Same options in View by Area
+All Possible Filters - Done
+Add Replacement data

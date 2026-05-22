@@ -1,0 +1,179 @@
+.external-page-container {
+  padding: 0px 20px;
+
+  // width: 1200px;
+  // margin: 0 auto;
+  .form-container {
+    background: #ededed;
+    margin: 0px -20px;
+    padding: 20px 10px;
+
+    .externalFormTitle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid @primary-color;
+      margin-bottom: 10px;
+      // background: #f7f7f7;
+      padding: 15px 25px;
+      margin: -25px;
+      margin-bottom: 25px;
+      border-radius: 5px 5px 0px 0px;
+
+      background: @primary-color;
+      background: -moz-linear-gradient(122deg, @primary-color 70%, rgba(255, 255, 255, 1) 70%);
+      background: -webkit-linear-gradient(122deg, @primary-color 70%, rgba(255, 255, 255, 1) 70%);
+      background: linear-gradient(122deg, @primary-color 70%, rgba(255, 255, 255, 1) 70%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@primary-color, endColorstr="#ffffff", GradientType=1);
+      position: relative;
+
+      .logo img {
+        max-height: 70px;
+      }
+
+      .label {
+        font-weight: 400;
+        font-size: 26px;
+        margin-bottom: 0px;
+        color: #fff;
+        line-height: 20px;
+        padding: 15px 0px;
+      }
+
+      .label-strong {
+        font-weight: 600;
+      }
+
+      @media (max-width: 767px) {
+        background: -moz-linear-gradient(122deg, @primary-color 60%, rgba(255, 255, 255, 1) 60%);
+        background: -webkit-linear-gradient(122deg, @primary-color 60%, rgba(255, 255, 255, 1) 60%);
+        background: linear-gradient(122deg, @primary-color 60%, rgba(255, 255, 255, 1) 60%);
+
+        .label,
+        .label-strong {
+          display: block;
+          line-height: 24px;
+          font-size: 22px;
+          padding: 3px 0px;
+        }
+
+        .label-strong {
+          padding-top: 0px;
+        }
+      }
+
+      //End media query
+      @media (max-width: 576px) {
+        display: block;
+        background: #e96b28;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px;
+
+        .label,
+        .label-strong {
+          line-height: 20px;
+          font-size: 20px;
+          padding: 7px 0px 5px 0px;
+        }
+
+        .label-strong {
+          padding-top: 0px;
+        }
+
+        .logo {
+          background: #fff;
+          margin: 0px -25px;
+          /* margin-bottom: 10px; */
+          padding: 15px 0px;
+          width: 100%;
+          border-radius: 5px 5px 0px 0px;
+        }
+      }
+
+      //End media query
+    }
+
+    .support-worker-form-container,
+    .client-referral-form-container,
+    .incident-form-container {
+      padding: 25px;
+      max-width: 960px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 25px #a5a5a5;
+      background: #fff;
+      margin: 0px auto;
+
+    }
+  }
+}
+
+.teamBoxContainer {
+  //background:#f4f8fb;
+  padding-top: 10px;
+
+  // .teamBox {
+  //   // border:1px solid red;
+  //   text-align: center;
+  //   .teamImg {
+  //     border: 8px solid #ffffff;
+  //     border-radius: 6px;
+  //     box-shadow: 0px 0px 10px #cacaca;
+  //   }
+  //   .teamName {
+  //     font-weight: 500;
+  //     font-size: 16px;
+  //     padding-top: 15px;
+  //     color: #e96b28;
+  //   }
+  //   .teamPosition {
+  //     font-size: 14px;
+  //     color: #6b6b6b;
+  //     padding-bottom: 25px;
+  //   }
+  // }
+  .teamSideBySite {
+    // border:1px solid red;
+    box-shadow: 0px 0px 15px #cacaca;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+    .teamSideSection {
+      padding: 20px;
+
+      .teamPosition {
+        color: #6b6b6b;
+      }
+
+      .teamName {
+        font-size: 22px;
+        font-weight: 500;
+        padding-bottom: 12px;
+      }
+
+      .teamCountry,
+      .teamLanguages,
+      .teamExp,
+      .teamDesc {
+        color: #6b6b6b;
+
+        span {
+          font-weight: 500;
+        }
+      }
+
+      .teamExp,
+      .teamDesc {
+        padding-top: 12px;
+      }
+    }
+  }
+
+  @media (max-width: 575px) {
+    .teamSideBySite {
+      display: block;
+    }
+  }
+}

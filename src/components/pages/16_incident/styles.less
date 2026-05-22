@@ -1,0 +1,93 @@
+.incident-form-container {
+  .risk-rate {
+    display: block;
+    width: 200px;
+    padding: 0px 10px;
+    color: #fff;
+    // background: red;
+    transition: all 320ms;
+    border-radius: 5px;
+  }
+  .type-1{
+    background: linear-gradient(90deg, #400000 0%, rgba(255,255,255,0) 100%);
+  }
+  .type-2{
+    background: linear-gradient(90deg, #800000 0%, rgba(255,255,255,0) 100%);
+  }
+  .type-3{
+    background: linear-gradient(90deg, #bf0000 0%, rgba(255,255,255,0) 100%);
+  }
+  .type-4{
+    background: linear-gradient(90deg, #ff0000 0%, rgba(255,255,255,0) 100%);
+  }
+  .type-5{
+    background: linear-gradient(90deg, #ff5050 0%, rgba(255,255,255,0) 100%);
+  }
+
+  .step_container_2{
+    border: 1px dashed #b9b9b9;
+    padding: 20px 20px 12px 20px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    background: #eef1f1;
+    .ant-steps-horizontal:not(.ant-steps-label-vertical) .ant-steps-item-description{
+      max-width: unset;
+    }
+    .ant-steps-item{
+      // width: 25%;
+      .ant-steps-item-description{
+        font-size:12px
+      }
+    }
+    .ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title::after,
+    .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title::after{
+      background-color:#cdcdcd !important;
+    }
+    .tow_col > .ant-steps-item{
+      width: 50%;
+    }
+    // .three_col > .ant-steps-item{
+    //   width: 33.3%;
+    // }
+    .four_col > .ant-steps-item{
+      width: 25%;
+    }
+    @media (max-width: 767px) {
+      .ant-steps{
+        margin-bottom:8px;
+        text-align: center;
+        .ant-steps-item{
+          padding-left: unset;
+          .ant-steps-item-icon{
+            margin: 0 3px 0 0;
+          }
+          .ant-steps-item-content{
+            display: none;
+          }
+        }
+      }
+    }//End 767
+  }//End step_container_2
+
+  .heading-label{
+    border: 1px dashed #b9b9b9;
+    padding: 6px 10px;
+    display: block;
+    background: #eef1f1;
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+}//End incident-form-container
+
+.incident-log-container{
+  .btn-approve{
+    height: 20px;
+    line-height: 18px;
+    position: relative;
+    top: -2px;
+    margin-left: 4px;
+    span{
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.l_c .container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 220ms;
+    -moz-transition: all 220ms;
+    -o-transition: all 220ms;
+    transition: all 220ms;
+
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,0.7287289915966386) 0%, rgba(43,76,126,0.700717787114846) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.7287289915966386) 0%, rgba(43,76,126,0.700717787114846) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.7287289915966386) 0%, rgba(43,76,126,0.700717787114846) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#2b4c7e",GradientType=1);
+    
+    background: 
+    /* linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), */
+    /* linear-gradient(0deg, rgba(0,0,0,0.7287289915966386) 0%, rgba(43,76,126,0.700717787114846) 100%), */
+    radial-gradient(ellipse at center, rgba(0,0,0,0.1) 40%,rgba(0,0,0,0.6) 100%);
+    /* url(./imgs/content-bg.jpg); */
+    /* background-size: cover; */
+    /* background-position: center bottom; */
+
+    border-radius: unset;
+    height: 100%;
+}
+
+.l_c .form{
+    width:320px;
+    background: #fff;
+    padding: 20px !important;
+    border-radius: 10px;
+    /* border: 1px solid #e2e2e2; */
+    /* box-shadow: 10px 10px 5px #323232; */
+
+    /* border: 1px solid #000000; */
+    box-shadow: 0px 0px 30px #000000;
+}
+
+.l_c .content{
+    margin: -21px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    
+    background: rgb(49, 97, 176);
+    background: -moz-linear-gradient(90deg, @primary-color 0%, ~'@{primary-color}1c' 35%, ~'@{primary-color}e1' 68%, @primary-color 100%);
+    background: -webkit-linear-gradient(90deg, @primary-color 0%, ~'@{primary-color}e1' 35%, ~'@{primary-color}e1' 68%, @primary-color 100%);
+    background: linear-gradient(90deg, @primary-color 0%, ~'@{primary-color}e1' 35%, ~'@{primary-color}e1' 68%, @primary-color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ef5c58",endColorstr="#ef5c58",GradientType=1);
+
+}
+.l_c .content h1{
+    color: #fff;
+    font-size: 20px;
+}
+.l_c .content p{
+    color: #fff;
+}
+// .l_c .ant-row{
+//     padding-bottom: 20px;
+// }
+// .l_c .ant-row input[type='text'],
+// .l_c .ant-row input[type='password']{
+//     padding: 21px 10px;
+//     margin-bottom: 5px;
+// }
+.l_c .ant-form-item{
+    margin-bottom: 3px;
+}
+.l_c .ant-form-item-label{
+    text-align: left;
+    display: inline-block;
+    width: fit-content;
+    top: 10px;
+    z-index: 3;
+    background: #fff;
+    padding: 0px 10px 0px 6px;
+    left: 14px;
+}
+
+
+.l_c .hr{
+    border: 0.4pt dashed #d6d6d6;
+}
+
+
+.l_c .ant-form-item-required::before{
+    float:unset !important;
+}
+.l_c .ant-form-item-explain{
+    color: red;
+    text-shadow: none;
+    height: 0px;
+    line-height: 22px;
+    top: 45px;
+    position: absolute;
+}
+.l_c .forget-success-msg{
+    border: 1px solid #d0d0d0;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px #dadada;
+    margin-bottom: 10px;
+}
+.l_c .forget-success-msg i{
+    display: block;
+    font-size: 70px;
+    color: #09bb09;
+    margin-bottom: 10px;
+}

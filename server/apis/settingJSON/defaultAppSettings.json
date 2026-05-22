@@ -1,0 +1,76 @@
+{
+  "general": {
+    "assignManagerToSW": true,
+    "addClientInDefaultCompany": false
+  },
+  "shift": {
+    "unattendedMaxTimeInMinutes": 90,
+    "unattendedMaxTimeMessageOnStartTimeBtn": "Max Time Exceeded",
+    "delayMaxTimeInMinutes": 30,
+    "ableToStartShiftBeforeMinutes": 5,
+    "ableToStartShiftBeforeMessageOnStartTimeBtn": "Start On Time"
+  },
+  "formSetting": {
+    "supportWorker": {
+      "step": true,
+      "allowClickOnSteps": true,
+      "stepAsSections": false,
+      "tableIndividualColFilter": {
+        "allow": true,
+        "filterByTypeOrSelect": "select"
+      }
+    },
+    "client": {
+      "step": true,
+      "allowClickOnSteps": true,
+      "stepAsSections": false,
+      "tableIndividualColFilter": {
+        "allow": true,
+        "filterByTypeOrSelect": "select"
+      }
+    },
+    "incident": {
+      "step": true,
+      "allowClickOnSteps": true,
+      "stepAsSections": false,
+      "tableIndividualColFilter": {
+        "allow": true,
+        "filterByTypeOrSelect": "select"
+      }
+    },
+    "servicePlaining": {
+      "tableIndividualColFilter": {
+        "allow": true,
+        "filterByTypeOrSelect": "select"
+      }
+    },
+    "servicePlainingTimerLog": {
+      "tableIndividualColFilter": {
+        "allow": true,
+        "filterByTypeOrSelect": "select"
+      }
+    },
+    "appointment": {
+      "tableIndividualColFilter": {
+        "allow": true,
+        "filterByTypeOrSelect": "select"
+      }
+    }
+  },
+  "settings": {
+    "testEmailSend": {
+      "senderName": "Test Email",
+      "senderEmail": "admin@authenticlifecare.com.au",
+      "receiverName": "Kashif Fazal",
+      "receiverEmail": "kashiffazalfullstack@gmail.com"
+    },
+    "emailSentList": {
+      "tableIndividualColFilter": {
+        "allow": true,
+        "filterByTypeOrSelect": "select"
+      }
+    }
+  },
+  "googleDocViewerForPDF": false,
+  "googleDocViewerURL": "https://docs.google.com/viewerng/viewer?url="
+}

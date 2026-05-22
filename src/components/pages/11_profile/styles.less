@@ -1,0 +1,58 @@
+@import '../../../css/less-variables.less';
+.profile-container {
+  .info {
+    div {
+      border: 1px dashed @app-border-color;
+      padding: 12px 15px;
+      margin-top: 10px;
+    }
+
+    b {
+      display: block;
+      color: #616161;
+      padding-bottom: 3px;
+    }
+    span {
+      display: block;
+      // border-bottom: 1px dashed#e6e6e6;
+      // margin-bottom: 5px;
+      // padding-bottom: 5px;
+      color: #797979;
+      font-size: 14px;
+    }
+    span:last-child {
+      margin: 0px;
+    }
+  }
+  .total_trans {
+    border: 3px solid @app-border-color;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background: #f0f2f547;
+    b {
+      font-size: 50px;
+    }
+    span {
+      font-size: 16px;
+    }
+  }
+  // padding: 25px;
+  h2 {
+    margin: 1px;
+    margin-top: 19px;
+  }
+  p {
+    margin: 0px;
+  }
+  .ant-list {
+    margin: -25px;
+    border: unset;
+    border-top: 1px solid #f0f0f0;
+    border-radius: 0px;
+    margin-top: unset;
+  }
+} //End profile-container

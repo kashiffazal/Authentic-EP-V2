@@ -1,0 +1,3 @@
+<?php
+   $htmlFooter = '</body></html>';
+?>

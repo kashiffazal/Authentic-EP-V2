@@ -1,0 +1,35 @@
+.signPad {
+  position: relative;
+  .spb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:22px;
+    .btnToLink{
+      // border:1px solid red;
+    }
+  }
+  .sigPad {
+    border-width: 2px;
+    border-style: dashed;
+    border-color: rgb(221, 221, 221);
+    background-color: rgb(255, 255, 255);
+    cursor: url('./pen.cur'), pointer;
+  }
+  .disabled{cursor: no-drop}
+
+  .buttons {
+    background-image: url('./refresh.png');
+    border: unset;
+    background-color: unset;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-position: center center;
+    cursor: pointer;
+    outline: unset;
+    position: absolute;
+    top: -22px;
+    right: 0;
+  }
+}

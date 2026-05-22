@@ -1,0 +1,203 @@
+// body {
+//   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+//     url(./imgs/content-bg.jpg);
+//   background-size: cover;
+//   background-position: center bottom;
+// }
+.screen2 {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(../../imgs/body-bg.jpg);
+  // background: linear-gradient(rgb(255 255 255 / 90%), rgb(255 255 255 / 90%)),
+  //   url(./imgs/body-bg.jpg);
+
+  background-size: cover;
+  background-position: center bottom;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // height: 100vh;
+  padding: 50px 0px;
+  .container-scr-2 {
+    // margin:0 auto;
+    box-shadow: 0px 0px 30px #b3b3b3;
+    width: 80%;
+    .heading {
+      margin: 0px;
+      color: @primary-color;
+      font-size: 20px;
+      margin-top: 15px;
+    }
+    .para {
+      font-size: 13px;
+      margin-top: 10px;
+      color: #8c8c8c;
+      margin-bottom: 15px;
+    }
+    .company_logo img {
+      width: 150px;
+      margin-bottom: 35px;
+    }
+    .form-section {
+      padding: 40px 50px;
+      background: #fff;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .bg-section {
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        url(../../imgs/content-bg.jpg);
+      // background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    .form-section,
+    .bg-section {
+      min-height: 510px;
+    }
+
+    .hide_eye .ant-input-password-icon {
+      display: none;
+    }
+
+    //Fields Styles Modification
+    .bb {
+      border-bottom: 1px solid #dddfea !important;
+      margin-bottom: 15px !important;
+    }
+    .custom-field {
+      border: 1px solid #dddfea;
+      border-bottom: unset;
+      margin: 0;
+      padding: 0px 10px 0px 10px;
+      input,
+      .ant-select-selector,
+      .ant-input-password-default {
+        border: unset;
+        outline: unset;
+        box-shadow: unset !important;
+        font-weight: 500;
+        font-size: 13px;
+        color: @primary-color;
+      }
+      .ant-select-arrow {
+        top: 38%;
+      }
+      .ant-form-item-label {
+        padding: 0px;
+        padding-left: 6px;
+      }
+      label {
+        width: 100%;
+        position: relative;
+        top: 5px;
+      }
+      label:before {
+        content: "";
+      }
+      .ant-form-item-explain {
+        top: 8px;
+        width: auto;
+        right: 10px;
+        font-size: 11px;
+        position: absolute;
+        z-index: 10;
+      }
+    }
+    .custom-field:focus-within {
+      box-shadow: inset 3px 0px 0px 0px @primary-color;
+      transition: all 320ms;
+    }
+    .ant-form-explain {
+      right: 0px;
+      position: absolute;
+      width: auto;
+      top: 14px;
+      font-size: 12px !important;
+    }
+    .ant-btn {
+      border-radius: 3px;
+      min-width: 100px;
+      height: 40px;
+      color: #e96729;
+      font-size: 13px;
+      background-color: @primary-color;
+      border-color: @primary-color;
+      width: 100%;
+    }
+    .ant-btn-primary {
+      color: #fff;
+    }
+    .remember-checkbox {
+      margin: 0px;
+      label {
+        color: #8c8c8c;
+        font-size: 13px;
+      }
+      .ant-checkbox-inner {
+        border: 1px solid #dddfea;
+      }
+    }
+
+    .btnToLinkLogin,
+    .btn-label {
+      background: unset;
+      color: @primary-color;
+      outline: none;
+      cursor: pointer;
+      border: unset;
+      padding: 0px;
+      font-size: 13px;
+    }
+    .btn-label {
+      cursor: unset;
+    }
+    .p-color {
+      color: #e96729;
+    }
+    .bar_navigation {
+      // border:1px solid red;
+      text-align: center;
+      padding-top: 15px;
+    }
+    .signup-bar {
+      // border:1px solid red;
+      text-align: center;
+      padding-top: 15px;
+      color: #8c8c8c;
+      font-size: 13px;
+    }
+  } //end container
+} //End screen2
+
+.screen2-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  .login-footer-bar {
+    // border:2px solid red;
+    // margin:-50px 0px;
+  }
+}
+@media (max-width: 991px) {
+  .screen2 .bg-section {
+    display: none;
+  }
+  .screen2-footer {
+    position: unset;
+  }
+} //End 1024
+
+@media (max-width: 767px) {
+} //End 767
+
+@media (max-width: 576px) {
+} /*End 576*/
+
+@media (max-width: 480px) {
+} /*End 480*/
